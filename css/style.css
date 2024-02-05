@@ -63,6 +63,7 @@ ul.lnb{
     background-color:rgb(255,225,230);
     top:40px;
     padding: 20px 0;
+    display: none;
 }
 ul.lnb>li{
     width: 100%;
@@ -84,9 +85,64 @@ ul.lnb>li>a{
 }
 .hero{
     height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.heroin{
+    width: 1200px;
+    height: 900px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.heroin img{
+    float: left;
 }
 .main{
     height: 200px;
+    display: flex;
+}
+.tabsbox{
+    width: 36%;
+    height: 200px;
+    padding-right: 10px;
+}
+.banner,
+.quick{
+    width: 32%;
+    height: 200px;
+}
+.banner{
+    background-color:rgba(255,225,230,.4);
+}
+.quick{
+    background-color:rgba(255,225,230,.6);
+}
+.tabnav{
+    margin-top: 10px;
+    display: flex;
+}
+.tabnav li{
+    background-color: #b9bbc7;
+    padding: 8px 20px;
+}
+.tabnav li a{
+    color: #7a7c88;
+}
+.tabnav li.active{
+    background-color:rgb(255,225,230);
+}
+.tabnav li.active a{
+    color: #222328;
+    font-weight: bold;
+}
+.tab{
+    background-color: rgb(255,225,230);
+    padding: 15px 20px;
+    display: none;
+}
+.tab.active{
+    display: block;
 }
 footer{
     height: 100px;
