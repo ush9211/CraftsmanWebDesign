@@ -119,7 +119,7 @@ ul.lnb>li>a{
     background-color:rgba(255,225,230,.6);
 }
 .tabnav{
-    margin-top: 10px;
+    margin-top: 8px;
     display: flex;
 }
 .tabnav li{
@@ -144,7 +144,96 @@ ul.lnb>li>a{
 .tab.active{
     display: block;
 }
+
+/************ NOTICE ***********/
+#notice li{
+    border-bottom: 1px dashed #b9bbc7;
+    transition: all 300ms;
+}
+#notice li:hover{
+    background: rgb(253,174,187);
+}
+#notice li a{
+    display: block;
+    line-height: 24px;
+}
+
+/************ GALLERY ***********/
+#gallery::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.col{
+    float: left;
+    width: 33.3334%;
+    padding: 12px 15px;
+}
+.col img{
+    max-width: 100%;
+}
+
+/************ BANNER ***********/
+.banner{
+    width: 384px;
+}
+.banner img{
+    width: 100%;
+    display: block;
+    height: 33.3334%;
+}
+
+/************ QUICK ***********/
+.quick{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.quick a:hover{
+    background: #fff;
+    transition: all 400ms;
+    border-radius: 12px;
+    box-shadow: 3px 3px 13px  #52545e ;
+}
+.quick h3{
+    margin: 0 10px;
+    text-align: center;
+    background: #fff;
+    color: #222328;
+    border-radius: 10px;
+    padding: 5px;
+}
+.quick img{
+    margin: 5px;
+    height: 110px;
+    padding: 10px;
+}
+
+/************ FOOTER ***********/
 footer{
     height: 100px;
     background: #222328;
+}
+
+/************ POP UP ***********/
+.popup{
+    width: 400px;
+    height: 300px;
+    border: 1px solid #eee;
+    position: fixed;
+    top: 250px;
+    left: calc(50% - 200px);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    z-index: 999;
+    padding: 30px;
+    display: none;
+}
+.close{
+    position: absolute;
+    padding: 5px 15px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
